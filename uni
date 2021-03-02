@@ -1,9 +1,5 @@
 ---
-
-- hosts: node
+- hosts: uninet
   roles:
-    - template/gpu
-    - template/gui
-    - hwd
-    - my
-    - this
+    - client
+    - server

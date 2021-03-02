@@ -1,0 +1,5 @@
+---
+
+- name: server
+  debug:
+    msg: "world"
