@@ -10,6 +10,13 @@
 - name: Download src
   include_tasks: "{{server_version}}/download"
 
+- name: configure
+  command: '{{server_src}}/configure {{config_args}}'
+  args:
+    chdir: '{{server_src}}'
+    creates: '{{server_src}}/src/guacd/guacd'
+
+
 - name: Build
   command: make
   args:
@@ -23,3 +30,5 @@
     creates: /usr/local/sbin/guacd
   become: true
   # requires root
+
+# https://guacamole.apache.org/doc/gug/installing-guacamole.html
