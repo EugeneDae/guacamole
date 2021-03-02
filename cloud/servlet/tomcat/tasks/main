@@ -1,0 +1,26 @@
+---
+- name: Install tomcat9
+  apt:
+    pkg:
+    - tomcat9
+    - tomcat9-admin
+  become: true
+
+
+- name: enable UFW Firewall
+  ufw:
+    state: enabled
+    policy: deny
+  become: true
+
+- name: Set logging
+  ufw:
+    logging: 'on'
+  become: true
+
+- name: Firewall allow port
+  ufw:
+    rule: allow
+    port: '8080'
+    proto: tcp
+  become: true

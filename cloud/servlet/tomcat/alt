@@ -1,0 +1,20 @@
+---
+- name: Installing Java
+  apt:
+    pkg:
+    - openjdk-11-jdk
+  become: true
+
+- name: Create tomcat directory
+  file:
+    path: /opt/tomcat
+    state: directory
+    mode: '0755'
+  become: true
+
+- name: Add tomcat user
+  user:
+    name: tomcat
+    comment: insecure tomcat user
+    home: /opt/tomcat
+  become: true

@@ -28,5 +28,3 @@
     chdir: '{{server_src}}'
     creates: /usr/local/sbin/guacd
   become: true
-
-# https://guacamole.apache.org/doc/gug/installing-guacamole.html
