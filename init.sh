@@ -4,7 +4,7 @@ uninet(){
 
 thisTemplate(){
   cd template
-  cp .this this
+  cp -r .this this
 }
 
 uninet
