@@ -3,3 +3,6 @@
   file:
     path: '{{server_src}}'
     state: absent
+
+- debug:
+    msg: '{{server_src}}'
