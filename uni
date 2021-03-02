@@ -1,0 +1,9 @@
+---
+
+- hosts: node
+  roles:
+    - template/gpu
+    - template/gui
+    - hwd
+    - my
+    - this
