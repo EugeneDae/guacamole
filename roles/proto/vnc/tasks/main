@@ -1,0 +1,6 @@
+---
+- name: libVNCServer
+  apt:
+    pkg:
+    - libvncserver-dev
+  become: true

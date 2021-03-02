@@ -1,4 +1,4 @@
 ---
 dependencies:
 - role: build-tools
-- role: proto/freerdp
+- role: proto/vnc

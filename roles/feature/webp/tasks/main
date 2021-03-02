@@ -1,0 +1,6 @@
+---
+- name: WebP images
+  apt:
+    pkg:
+    - libwebp-dev
+  become: true

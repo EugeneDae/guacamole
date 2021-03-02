@@ -1,7 +1,5 @@
 ---
 - hosts: uninet
   roles:
-    - native/build-tools
     - template/rdp
-    # - native/client
-    # - native/server
+    - template/vnc
