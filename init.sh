@@ -3,7 +3,6 @@ uninet(){
 }
 
 thisTemplate(){
-  cd
   cp -r this/.this this/this
 }
 
