@@ -3,6 +3,7 @@ uninet(){
 }
 
 thisTemplate(){
+  rm -rf this/this
   cp -r this/.this this/this
 }
 
