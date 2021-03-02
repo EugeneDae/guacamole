@@ -1,0 +1,5 @@
+---
+
+
+# "The guacenc utility, provided by guacamole-server to translate screen recordings into video, depends on FFmpeg, and will only be built if at least the libavcodec, libavformat, libavutil, and libswscale libraries provided by FFmpeg are installed."
+# https://guacamole.apache.org/doc/gug/installing-guacamole.html

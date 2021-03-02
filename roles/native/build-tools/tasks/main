@@ -1,0 +1,20 @@
+---
+
+- name: Required dependencies
+  apt:
+    pkg:
+    - gcc
+    - libcairo2-dev
+    - libjpeg-turbo8-dev
+    - libpng-dev
+    - libtool-bin
+    - libossp-uuid-dev
+  become: true
+
+- name: Optional dependencies
+  apt:
+    pkg:
+    - gcc
+  become: true
+
+#https://guacamole.apache.org/doc/gug/installing-guacamole.html

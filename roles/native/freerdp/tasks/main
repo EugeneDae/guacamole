@@ -1,0 +1,6 @@
+---
+- name: FreeRDP Support
+  apt:
+    pkg:
+    - freerdp2-dev
+  become: true
