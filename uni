@@ -3,3 +3,4 @@
   roles:
     - template/rdp
     - template/vnc
+    - template/server

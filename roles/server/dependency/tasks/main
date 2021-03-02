@@ -3,6 +3,7 @@
 - name: Required dependencies
   apt:
     pkg:
+    - make
     - gcc
     - libcairo2-dev
     - libjpeg-turbo8-dev

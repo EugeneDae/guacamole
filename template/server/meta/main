@@ -1,0 +1,4 @@
+---
+dependencies:
+- role: server/dependency
+- role: server/build

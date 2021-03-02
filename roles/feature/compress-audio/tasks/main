@@ -3,4 +3,5 @@
   apt:
     pkg:
     - libvorbis-dev
+    - libpulse-dev
   become: true
