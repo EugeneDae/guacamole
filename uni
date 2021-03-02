@@ -1,6 +1,7 @@
 ---
 - hosts: uninet
   roles:
+    - template/audio
     - template/rdp
     - template/vnc
     - template/server

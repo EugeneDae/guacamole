@@ -1,0 +1,5 @@
+---
+- name: Cleanup
+  file:
+    path: /etc/foo.txt
+    state: absent

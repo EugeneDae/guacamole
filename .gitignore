@@ -3,9 +3,5 @@ ansible.cfg
 .net/hosts/*
 !.net/hosts/local
 
-# HwD
-hwd/*
-my/*
-!hwd/hwd
-!hwd/test
-!hwd/my.e
+# Template
+template/this

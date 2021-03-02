@@ -1,7 +1,6 @@
 ---
-- name: Ogg Vorbis audio
+- name: Pulse audio
   apt:
     pkg:
-    - libvorbis-dev
     - libpulse-dev
   become: true

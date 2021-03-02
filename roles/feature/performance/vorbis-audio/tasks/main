@@ -1,0 +1,6 @@
+---
+- name: Ogg Vorbis audio
+  apt:
+    pkg:
+    - libvorbis-dev
+  become: true

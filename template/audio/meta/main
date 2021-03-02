@@ -1,0 +1,4 @@
+---
+dependencies:
+- role: feature/audio
+- role: feature/performance/vorbis-audio
