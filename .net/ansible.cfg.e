@@ -1,4 +1,3 @@
 [defaults]
 inventory = .net/hosts
-interpreter_python = /usr/bin/python3
-roles_path = cloud:common:hwd:this
+roles_path = this

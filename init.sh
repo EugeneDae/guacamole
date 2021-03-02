@@ -3,8 +3,8 @@ uninet(){
 }
 
 thisTemplate(){
-  cd template
-  cp -r .this this
+  cd
+  cp -r this/.this this/this
 }
 
 uninet

@@ -4,4 +4,4 @@ ansible.cfg
 !.net/hosts/local
 
 # Template
-template/this
+this/this
