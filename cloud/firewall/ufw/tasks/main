@@ -1,0 +1,25 @@
+---
+
+- name: enable UFW Firewall, and block everything
+  ufw:
+    state: enabled
+    policy: deny
+  become: true
+
+- name: open SSH port
+  ufw:
+    rule: allow
+    name: OpenSSH
+  become: true
+
+- name: Set logging
+  ufw:
+    logging: 'on'
+  become: true
+
+- name: open Tomcat port
+  ufw:
+    rule: allow
+    port: '8080'
+    proto: tcp
+  become: true

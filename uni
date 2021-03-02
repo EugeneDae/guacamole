@@ -5,6 +5,4 @@
     tags: clean, never
 
   - role: client
-    tags: install, never
-
-  - role: cloud/servlet/tomcat
+    tags: install
