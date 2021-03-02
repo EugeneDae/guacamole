@@ -7,4 +7,19 @@
     owner: '{{ansible_user}}'
   become: true
 
-- include_tasks: "{{server_version}}/main"
+- name: Download src
+  include_tasks: "{{server_version}}/download"
+
+- name: Build
+  command: make
+  args:
+    chdir: '{{server_src}}'
+    creates: '{{server_src}}/src/guacd/guacd'
+
+- name: Install
+  script: build.sh
+  args:
+    chdir: '{{server_src}}'
+    creates: /usr/local/sbin/guacd
+  become: true
+  # requires root
