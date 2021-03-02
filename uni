@@ -1,7 +1,17 @@
 ---
 - hosts: uninet
   roles:
-  - { role: template/audio, template/rdp, template/vnc, template/server }
+  - role: template/audio
+    tags: install
+
+  - role: template/rdp
+    tags: install
+
+  - role: template/vnc
+    tags: install
+
+  - role: template/server
+    tags: install
 
   - role: test/clean
     tags: clean, never
