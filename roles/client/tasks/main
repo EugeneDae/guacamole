@@ -1,5 +1,11 @@
 ---
+- name: create directory
+  file:
+    path: /opt/guacamole
+    state: directory
+    mode: '0755'
+    owner: '{{ansible_user}}'
+  become: true
 
-- name: client
-  debug:
-    msg: "hello"
+- name: Download client
+  include_tasks: "{{server_version}}/download"

@@ -1,0 +1,16 @@
+---
+dependencies:
+- role: template/audio
+  tags: install
+
+- role: template/rdp
+  tags: install
+
+- role: template/vnc
+  tags: install
+
+- role: template/server
+  tags: install
+
+- role: client
+  tags: install
