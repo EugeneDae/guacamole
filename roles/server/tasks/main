@@ -1,5 +1,9 @@
 ---
+- name: Create a directory if it does not exist
+  file:
+    path: /opt/guacamole
+    state: directory
+    mode: '0755'
+    owner: '{{ansible_user}}'
 
-- name: server
-  debug:
-    msg: "world"
+- include_tasks: "{{server_version}}/main"
