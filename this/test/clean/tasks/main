@@ -1,5 +1,5 @@
 ---
 - name: Cleanup
   file:
-    path: /etc/foo.txt
+    path: '{{server_src}}'
     state: absent
