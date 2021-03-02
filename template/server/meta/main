@@ -1,4 +1,5 @@
 ---
 dependencies:
+- role: this
 - role: server/dependency
 - role: server/build
