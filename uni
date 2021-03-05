@@ -1,8 +1,7 @@
 ---
 - hosts: uninet
   roles:
-  - role: clean
-    tags: clean, never
-
   - role: client
     tags: install
+
+  - role: template/.all

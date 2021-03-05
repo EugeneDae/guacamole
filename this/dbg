@@ -1,0 +1,5 @@
+---
+- hosts: uninet
+  roles:
+  - role: clean
+    tags: clean, never

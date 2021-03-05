@@ -1,0 +1,9 @@
+---
+
+- name: Test user-mapping.xml
+  copy:
+    src: test.user-mapping.xml
+    dest: /etc/guacamole/user-mapping.xml
+    owner: root
+    group: root
+    mode: '0644'
