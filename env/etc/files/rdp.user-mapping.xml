@@ -1,0 +1,14 @@
+<user-mapping>
+
+    <!-- Per-user authentication and config information -->
+    <authorize username="me" password="u">
+      <connection name="faster RDP">
+        <protocol>rdp</protocol>
+        <param name="hostname">localhost</param>
+        <param name="port">3389</param>
+        <param name="username">me</param>
+        <param name="password">u</param>
+        <param name="ignore-cert">true</param>
+      </connection>
+    </authorize>
+</user-mapping>

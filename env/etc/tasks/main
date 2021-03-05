@@ -5,9 +5,9 @@
     state: directory
     mode: '0755'
 
-- name: Test user-mapping.xml
+- name: Test Environment
   copy:
-    src: test.user-mapping.xml
+    src: 'rdp & vnc.user-mapping.xml'
     dest: /etc/guacamole/user-mapping.xml
     owner: root
     group: root

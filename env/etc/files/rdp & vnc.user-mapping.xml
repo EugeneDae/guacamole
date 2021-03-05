@@ -1,0 +1,21 @@
+<user-mapping>
+
+    <!-- Per-user authentication and config information -->
+    <authorize username="me" password="u">
+      <connection name="simple VNC">
+        <protocol>vnc</protocol>
+        <param name="hostname">0.0.0.0</param>
+        <param name="port">5901</param>
+        <param name="password">123456</param>
+      </connection>
+
+      <connection name="faster RDP">
+        <protocol>rdp</protocol>
+        <param name="hostname">localhost</param>
+        <param name="port">3389</param>
+        <param name="username">me</param>
+        <param name="password">u</param>
+        <param name="ignore-cert">true</param>
+      </connection>
+    </authorize>
+</user-mapping>

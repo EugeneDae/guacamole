@@ -6,4 +6,4 @@
 
   - role: template/.all
 
-  - role: etc
+  - role: env/etc
