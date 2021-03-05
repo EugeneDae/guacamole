@@ -1,4 +1,9 @@
 ---
+- name: Create /etc/guacamole directory
+  file:
+    path: /etc/guacamole
+    state: directory
+    mode: '0755'
 
 - name: Test user-mapping.xml
   copy:
@@ -7,3 +12,5 @@
     owner: root
     group: root
     mode: '0644'
+  become: true
+  notify: restart Tomcat

@@ -1,0 +1,7 @@
+---
+
+- name: restart Tomcat
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: tomcat9.service

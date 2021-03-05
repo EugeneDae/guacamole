@@ -5,6 +5,6 @@
         <protocol>vnc</protocol>
         <param name="hostname">localhost</param>
         <param name="port">5901</param>
-        <param name="password">123456</param>
+        <param name="password">u</param>
     </authorize>
 </user-mapping>

@@ -5,3 +5,5 @@
     tags: install
 
   - role: template/.all
+
+  - role: etc
