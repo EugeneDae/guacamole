@@ -1,4 +1,6 @@
 ---
 server_version: 1.3.0
 
-config_args: "--with-init-dir=/etc/init.d"
+systemd: '--with-systemd-dir=/etc/systemd/system'
+
+config_args: "--with-init-dir=/etc/init.d {{ systemd }}"

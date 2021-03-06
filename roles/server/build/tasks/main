@@ -28,3 +28,4 @@
     chdir: '{{server_src}}'
     creates: /usr/local/sbin/guacd
   become: true
+  notify: enable Systemd guacd

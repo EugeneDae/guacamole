@@ -1,0 +1,8 @@
+---
+
+- name: enable Systemd guacd
+  systemd:
+    enabled: yes
+    state: started
+    daemon_reload: yes
+    name: guacd
