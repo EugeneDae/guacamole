@@ -9,4 +9,3 @@
 
 - name: Download client
   include_tasks: "{{server_version}}/download"
-  notify: restart Tomcat

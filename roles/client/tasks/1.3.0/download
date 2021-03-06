@@ -6,3 +6,4 @@
     dest: '/var/lib/tomcat{{ tomcast_version }}/webapps/guacamole.war'
     checksum: "sha256:3e393e7ee19adb23a36c62607d952a51de0aac0af047400715120a5d6a93ab93"
   become: true  # Use become if Tomcat user not setup
+  notify: restart Tomcat
