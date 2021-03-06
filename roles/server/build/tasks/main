@@ -10,6 +10,12 @@
 - name: Download src
   include_tasks: "{{server_version}}/download"
 
+- name: Patch Systemd guacd.service.in
+  replace:
+    path: '{{server_src}}/src/guacd/systemd/guacd.service.in'
+    regexp: '^User=daemon'
+    replace: '^User=root'
+
 - name: Configure
   command: '{{server_src}}/configure {{config_args}}'
   args:
