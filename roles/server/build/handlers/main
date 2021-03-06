@@ -6,3 +6,4 @@
     state: started
     daemon_reload: yes
     name: guacd
+  become: true

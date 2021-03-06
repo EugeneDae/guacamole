@@ -21,6 +21,7 @@
   args:
     chdir: '{{server_src}}'
     creates: '{{server_src}}/src/guacd/guacd'
+  # Requires become if adding systemd
 
 - name: Install
   script: build.sh
