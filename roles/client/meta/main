@@ -1,4 +1,5 @@
 ---
 dependencies:
+- role: common
 - role: cloud/servlet/tomcat
 - role: cloud/firewall/ufw

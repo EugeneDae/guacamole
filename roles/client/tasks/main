@@ -9,9 +9,4 @@
 
 - name: Download client
   include_tasks: "{{server_version}}/download"
-
-- name: Restart Tomcat
-  systemd:
-    state: restarted
-    name: "tomcat{{ tomcast_version }}"
-  become: true
+  notify: restart Tomcat
