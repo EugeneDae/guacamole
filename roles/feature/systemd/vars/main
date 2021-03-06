@@ -1,0 +1,2 @@
+---
+systemd: '--with-systemd-dir=/etc/systemd/system'
