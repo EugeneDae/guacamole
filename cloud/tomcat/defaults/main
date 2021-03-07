@@ -1,2 +1,3 @@
 ---
 tomcast_version: 9
+tomcat_port: 8080
