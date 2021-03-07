@@ -6,9 +6,9 @@
     mode: '0755'
   become: true
 
-- name: Test Environment
-  copy:
-    src: 'rdp & vnc.user-mapping.xml'
+- name: Template Guacamole config
+  template:
+    src: '{{ guacamole_config }}'
     dest: /etc/guacamole/user-mapping.xml
     owner: root
     group: root

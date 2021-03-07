@@ -1,0 +1,3 @@
+----
+guacamole_config: rdp.user-mapping.xml.j2
+#rdp & vnc.user-mapping.xml

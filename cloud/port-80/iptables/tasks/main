@@ -5,18 +5,14 @@
     - iptables
   become: true
 
-# - name: 'Forward port 80 to {{ tomcat_port }}'
-#   iptables:
-#     table: nat
-#     chain: PREROUTING
-#     in_interface: eth0
-#     protocol: tcp
-#     match: tcp
-#     destination_port: 80
-#     jump: REDIRECT
-#     to_ports: '{{ tomcat_port }}'
-#     comment: 'Redirect web traffic to port {{ tomcat_port }}'
-#   become: yes
-
-- debug:
-    msg: '{{ansible_facts}}'
+- name: 'Forward port 80 to {{ tomcat_port }}'
+  iptables:
+    table: nat
+    chain: PREROUTING
+    protocol: tcp
+    match: tcp
+    destination_port: 80
+    jump: REDIRECT
+    to_ports: '{{ tomcat_port }}'
+    comment: 'Redirect web traffic to port {{ tomcat_port }}'
+  become: yes
