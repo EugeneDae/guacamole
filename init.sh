@@ -3,8 +3,8 @@ uninet(){
 }
 
 template(){
-  rm -rf this/this
-  cp -r this/.this this/this
+  [[ -d dir ]] && rm -rf this/this
+  [[ -d dir ]] || cp -r this/.this this/this
 }
 
 uninet
