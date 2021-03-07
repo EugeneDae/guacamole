@@ -5,15 +5,15 @@
     - iptables
   become: true
 
-- name: 'Forward port 80 to {{ tomcat_port }}'
+- name: 'Forward port 80 to {{ to_port }}'
   iptables:
     table: nat
     chain: PREROUTING
     protocol: tcp
     match: tcp
-    destination_port: '80'
+    destination_port: '{{ from_port }}'
     jump: REDIRECT
-    to_ports: '{{ tomcat_port }}'
-    comment: 'Redirect web traffic to port {{ tomcat_port }}'
+    to_ports: '{{ to_port }}'
+    comment: 'Redirect web traffic to port {{ to_port }}'
   become: yes
   notify: restart Tomcat
