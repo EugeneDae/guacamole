@@ -11,8 +11,9 @@
     chain: PREROUTING
     protocol: tcp
     match: tcp
-    destination_port: 80
+    destination_port: '80'
     jump: REDIRECT
     to_ports: '{{ tomcat_port }}'
     comment: 'Redirect web traffic to port {{ tomcat_port }}'
   become: yes
+  notify: restart Tomcat
