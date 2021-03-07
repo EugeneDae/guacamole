@@ -1,4 +1,4 @@
 ---
 server_version: 1.3.0
 src_dir: /opt/guacamole/
-server_src: '{{src_dir}}guacamole-server-{{server_version}}'
+server_src: '{{ src_dir }}guacamole-server-{{server_version}}'
