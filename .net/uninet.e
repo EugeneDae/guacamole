@@ -1,10 +1,10 @@
-[uninet]
-192.168.1.138
+[node]
+192.168.2.138
 
-[uninet:vars]
+[node:vars]
 ansible_become_password=u
-ansible_user=me
+ansible_user=support
 
 
-[node:children]
-uninet
+[net:children]
+node
