@@ -1,5 +1,5 @@
 ---
-- hosts: uninet
+- hosts: net
   roles:
   - role: client
     tags: install
