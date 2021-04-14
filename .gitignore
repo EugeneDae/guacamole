@@ -1,7 +1,7 @@
 # UniNetwork Dynamic Inventory
 ansible.cfg
-.net/hosts/*
-!.net/hosts/local
+net/hosts/*
+!net/hosts/local
 
 # Template
 this/this
