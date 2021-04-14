@@ -2,9 +2,11 @@
 # You can add inventory files to .net/hosts and it'll be ignored by git.
 
 uninet(){
-  [[ -f hosts/node ]] || cp node.j2 hosts/node
-  [[ -f hosts/uninet ]] || cp uninet.j2 hosts/uninet
-  ln -srf ansible.cfg.j2 ../ansible.cfg
+  mkdir -p hosts
+  [[ -f hosts/local ]] || cp template/local.j2 hosts/local
+  [[ -f hosts/node ]] || cp template/node.j2 hosts/node
+  [[ -f hosts/uninet ]] || cp template/uninet.j2 hosts/uninet
+  ln -srf template/ansible.cfg.j2 ../ansible.cfg
 }
 
 template(){
