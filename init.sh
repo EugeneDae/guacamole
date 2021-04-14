@@ -1,5 +1,5 @@
 uninet(){
-  cd .net; ./init.sh ; cd -
+  cd net; ./init.sh ; cd -
 }
 
 template(){

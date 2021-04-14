@@ -1,3 +1,3 @@
 [defaults]
-inventory = .net/hosts
+inventory = net/hosts
 roles_path = cloud:this
