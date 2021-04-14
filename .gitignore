@@ -1,4 +1,6 @@
 # UniNetwork Dynamic Inventory
+
+# Static Inventory templates
 ansible.cfg
 net/hosts/*
 
