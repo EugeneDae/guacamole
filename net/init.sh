@@ -1,15 +1,19 @@
 # This will create inventory & ansible.cfg to match your uniNetwork! You can use the Default - Dyanmic Inventory - or edit static files.
 # You can add inventory files to .net/hosts and it'll be ignored by git.
-dynamic(){
-  echo todo
-}
 
-static(){
+uninet(){
   [[ -f hosts/uninet ]] || cp uninet.e hosts/uninet
   ln -srf ansible.cfg.e ../ansible.cfg
 }
 
+template(){
+  cd ..
+  [[ -d dir ]] && rm -rf this/this
+  [[ -d dir ]] || cp -r this/.this this/this
+}
+
 main(){
-  static
+  uninet
+  template
 }
 main
