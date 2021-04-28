@@ -2,7 +2,7 @@
 
 # Static Inventory templates
 ansible.cfg
-net/hosts/*
+.net/hosts/*
 
 # Template
 this/this
