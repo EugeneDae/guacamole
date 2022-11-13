@@ -26,6 +26,6 @@ The service file which guacd creates at build runs guacd as the user
 "daemon" which does not seem to have a writable home directory. As "useradd
 -m damon" did not help to create a homedir for "daemon" I have changed the
 user from "daemon" to "root" in /etc/systemd/system/guacd.service, then
-"systemctl daemon reload" and "service guacd restart".
+"systemctl daemon-reload" and "service guacd restart".
 
 RDP works fine now :-)"
